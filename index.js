@@ -7,7 +7,7 @@ module.exports = {
     '@ririd',
     'eslint:recommended',
     'plugin:react/recommended',
-    'next/core-web-vitals',
+    // 'next/core-web-vitals',
     'plugin:prettier/recommended',
   ],
   overrides: [
