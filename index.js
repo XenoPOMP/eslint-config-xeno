@@ -1,7 +1,4 @@
-// @ts-check
-
-/** @type {import('eslint').Linter.Config} */
-const config = {
+module.exports = {
   env: {
     browser: true,
     es2021: true,
