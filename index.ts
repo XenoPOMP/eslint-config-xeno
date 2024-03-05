@@ -1,4 +1,6 @@
-module.exports = {
+import { Linter } from 'eslint';
+
+const config: Linter.Config = {
   env: {
     browser: true,
     es2021: true,
@@ -34,4 +36,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'import/order': 'off',
   },
-};
+}
+
+module.exports = config;

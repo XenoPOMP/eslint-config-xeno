@@ -2,14 +2,17 @@
   "name": "eslint-config-xeno",
   "version": "0.2.1",
   "description": "XenoPOMP`s ESLint config.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "shx rm -rf dist && tsc"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/XenoPOMP/eslint-config-template.git"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -28,7 +31,10 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
     "prettier": "^3.0.0",
+    "shx": "^0.3.4",
     "typescript": "^5"
   }
 }
