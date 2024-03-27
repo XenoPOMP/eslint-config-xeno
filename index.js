@@ -4,13 +4,16 @@ const xenopomp = () => {
   return ririd({
     next: true,
     react: true,
-    typescript: true,
+    typescript: {
+      overrides: {
+        'ts/consistent-type-definitions': ['error', 'interface'],
+      },
+    },
 
     jsonc: false,
     yaml: false,
 
     stylistic: {
-      semi: true,
       quotes: 'single',
     },
 
