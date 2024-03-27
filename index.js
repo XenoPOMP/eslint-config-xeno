@@ -28,6 +28,7 @@ const xenopomp = () => {
       'import/order': 'off',
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
+      'antfu/top-level-function': 'off',
     },
   });
 };
