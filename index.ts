@@ -1,4 +1,1 @@
-import { xenopomp } from './src/xenopomp';
-
-export { xenopomp };
-export default xenopomp;
+export { xenopomp } from './src/xenopomp';
