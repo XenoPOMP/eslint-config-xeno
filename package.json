@@ -3,6 +3,7 @@
   "version": "0.2.3",
   "description": "XenoPOMP`s ESLint config.",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "build": "shx rm -rf dist && tsc"
   },
