@@ -24,10 +24,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build config
+      - name: Install deps
         run: |
           yarn install --frozen-lockfile
-          yarn build
 
       - name: Publish if version has been updated
         uses: JS-DevTools/npm-publish@v2
