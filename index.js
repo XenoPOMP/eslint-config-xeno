@@ -2,7 +2,6 @@ import ririd from '@ririd/eslint-config';
 
 const xenopomp = () => {
   return ririd({
-    formatters: true,
     next: true,
     react: true,
     typescript: true,
