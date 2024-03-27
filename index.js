@@ -19,6 +19,9 @@ const xenopomp = () => {
 
     stylistic: {
       quotes: 'single',
+      overrides: {
+        'style/semi': 'off',
+      },
     },
 
     rules: {
