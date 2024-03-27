@@ -7,6 +7,10 @@ const xenopomp = () => {
     typescript: {
       overrides: {
         'ts/consistent-type-definitions': ['error', 'interface'],
+        'ts/interface-name-prefix': 'off',
+        'ts/explicit-function-return-type': 'off',
+        'ts/explicit-module-boundary-types': 'off',
+        'ts/no-explicit-any': 'off',
       },
     },
 
@@ -18,10 +22,6 @@ const xenopomp = () => {
     },
 
     rules: {
-      '@typescript-eslint/interface-name-prefix': 'off',
-      '@typescript-eslint/explicit-function-return-type': 'off',
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
-      '@typescript-eslint/no-explicit-any': 'off',
       'import/order': 'off',
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
