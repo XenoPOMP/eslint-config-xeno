@@ -9,6 +9,11 @@ const xenopomp = () => {
     jsonc: false,
     yaml: false,
 
+    stylistic: {
+      semi: true,
+      quotes: 'single',
+    },
+
     rules: {
       '@typescript-eslint/interface-name-prefix': 'off',
       '@typescript-eslint/explicit-function-return-type': 'off',
