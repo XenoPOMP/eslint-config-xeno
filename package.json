@@ -1,10 +1,12 @@
 {
   "name": "eslint-config-xeno",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "XenoPOMP`s ESLint config.",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "shx rm -rf dist && tsc"
+    "link:lib": "yarn link && yarn link eslint-config-xeno",
+    "unlink:lib": "yarn unlink eslint-config-xeno && yarn unlink && yarn install --force"
   },
   "repository": {
     "type": "git",
@@ -21,20 +23,21 @@
   "author": "XenoPOMP",
   "license": "MIT",
   "homepage": "https://github.com/XenoPOMP/eslint-config-template",
+  "peerDependencies": {
+    "eslint": ">=8.x"
+  },
   "dependencies": {
-    "@ririd/eslint-config": "0.7.0",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^14.1.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-react": "^7.34.0"
+    "@antfu/eslint-config": "^2.11.0",
+    "@ririd/eslint-config": "^1.1.0",
+    "eslint": "^8.57.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/eslint": "^8.56.5",
     "@types/node": "^20.11.24",
+    "eslint-config-xeno": "1.0.0-beta.12",
     "prettier": "^3.0.0",
     "shx": "^0.3.4",
-    "typescript": "^5"
+    "typescript": "^5.4.3"
   }
 }

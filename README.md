@@ -10,10 +10,10 @@ npm i -D eslint eslint eslint-config-xeno@latest
 yarn add -D eslint eslint eslint-config-xeno@latest
 ```
 
-## `eslintrc*` setup
+## `eslint.config.js`
 
-```eslint
-{
-  extends: ['xeno'],
-}
+```js
+import xenopomp from "eslint-config-xeno";
+
+export default xenopomp();
 ```
