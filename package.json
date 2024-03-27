@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "shx rm -rf dist && tsc"
+    "build": "shx rm -rf dist && tsc",
+    "link:lib": "yarn link && yarn link eslint-config-xeno",
+    "unlink:lib": "yarn unlink eslint-config-xeno && yarn unlink && yarn install --force"
   },
   "repository": {
     "type": "git",
