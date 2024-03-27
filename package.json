@@ -2,11 +2,10 @@
   "name": "eslint-config-xeno",
   "version": "1.0.0",
   "description": "XenoPOMP`s ESLint config.",
-  "main": "dist/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "shx rm -rf dist && tsc",
-    "link:lib": "yarn build && yarn link && yarn link eslint-config-xeno",
+    "link:lib": "yarn link && yarn link eslint-config-xeno",
     "unlink:lib": "yarn unlink eslint-config-xeno && yarn unlink && yarn install --force"
   },
   "repository": {

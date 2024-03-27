@@ -1,15 +1,12 @@
 import ririd from '@ririd/eslint-config';
-import { Linter } from 'eslint';
 
-/**
- * XenoPOMP`s ESLint flat config.
- */
-export const xenopomp = () => {
+const xenopomp = () => {
   return ririd({
-    typescript: true,
+    formatters: true,
     next: true,
+    react: true,
+    typescript: true,
 
-    // Disable jsonc and yaml support
     jsonc: false,
     yaml: false,
 
@@ -24,3 +21,5 @@ export const xenopomp = () => {
     },
   });
 };
+
+export default xenopomp;
