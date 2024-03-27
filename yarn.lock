@@ -1233,10 +1233,10 @@ eslint-config-flat-gitignore@^0.1.3:
     find-up "^7.0.0"
     parse-gitignore "^2.0.0"
 
-eslint-config-xeno@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xeno/-/eslint-config-xeno-1.0.0.tgz#51d973b1847afdd7f46594710c7f80f60d687f9e"
-  integrity sha512-OKuWDbx1QL/bsXuRfqmU8/W18z5+jHk0FJgcoF4xJbcbytApKxQhJVca1PISoAbrjREKnEPhp94GanYgWSCxAw==
+eslint-config-xeno@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-xeno/-/eslint-config-xeno-1.0.1.tgz#7d14c6c5bfe0c34f58ce6ebbd9dfe655263d0283"
+  integrity sha512-AySShTMiQdqUVPjWH9PxomurBgeUM2yrZ98Qu7vQjKbgkEL4EUR+Nu3XpewKQ9E92nuJxhG/Li6okplhFcVayQ==
   dependencies:
     "@antfu/eslint-config" "^2.11.0"
     "@ririd/eslint-config" "^1.1.0"

@@ -1,6 +1,6 @@
 import ririd from '@ririd/eslint-config';
 
-const xenopomp = () => {
+const xenopomp = options => {
   return ririd({
     next: true,
     react: true,
@@ -30,6 +30,8 @@ const xenopomp = () => {
       'react/prop-types': 'off',
       'antfu/top-level-function': 'off',
     },
+
+    ...options,
   });
 };
 
