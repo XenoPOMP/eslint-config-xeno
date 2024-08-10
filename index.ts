@@ -11,6 +11,7 @@ const config: Linter.Config = {
     'plugin:react/recommended',
     // 'next/core-web-vitals',
     'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   overrides: [
     {
@@ -38,6 +39,6 @@ const config: Linter.Config = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
   },
-}
+};
 
 module.exports = config;
