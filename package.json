@@ -36,5 +36,10 @@
     "prettier": "^3.0.0",
     "shx": "^0.3.4",
     "typescript": "^5"
+  },
+  "peerDependencies": {
+    "@types/eslint": ">=8",
+    "@types/node": ">=20",
+    "typescript": ">=5"
   }
 }
