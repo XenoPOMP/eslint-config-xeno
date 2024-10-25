@@ -30,26 +30,6 @@ export default function xenopomp(
         'antfu/top-level-function': 'off',
       },
 
-      // Ignore patterns
-      ignores: [
-        '**/.next/*',
-        '**/node_modules/*',
-        '**/.github/*',
-        'cypress',
-        '**/__tests__/e2e/*',
-        '*.json',
-        '**/*.d.ts',
-        '.eslintrc.js',
-        'eslint.config.js',
-        '.prettierrc',
-        '.stylelintrc.js',
-        'tsconfig.json',
-        'package.json',
-        '*.md',
-        '*.config.ts',
-        '*.config.js',
-      ],
-
       // Allow user to override ririd options
       ...options,
     },
@@ -69,6 +49,26 @@ export default function xenopomp(
           window: 'readonly',
         },
       },
+
+      // Ignore patterns
+      ignores: [
+        '**/.next/*',
+        '**/node_modules/*',
+        '**/.github/*',
+        'cypress',
+        '**/__tests__/e2e/*',
+        '*.json',
+        '**/*.d.ts',
+        '.eslintrc.js',
+        'eslint.config.js',
+        '.prettierrc',
+        '.stylelintrc.js',
+        'tsconfig.json',
+        'package.json',
+        '*.md',
+        '*.config.ts',
+        '*.config.js',
+      ],
     },
     {
       name: 'Rules breakup',
