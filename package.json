@@ -2,7 +2,8 @@
   "name": "eslint-config-xeno",
   "version": "2.0.0",
   "description": "XenoPOMP`s ESLint config.",
-  "main": "index.mjs",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "preview:config": "yarn build && eslint --print-config src/index.ts > config-matchup/new-config.json",
