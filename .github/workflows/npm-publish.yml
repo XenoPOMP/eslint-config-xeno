@@ -8,23 +8,15 @@ on:
     types: [created]
 
 jobs:
-  build:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 22
-      - run: yarn install --frozen-lockfile
 
-  publish-npm:
-    needs:
-      - build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Install deps
+      - name: Install deps and build project
         run: |
           yarn install --frozen-lockfile
           yarn build
