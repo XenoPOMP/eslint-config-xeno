@@ -7,6 +7,7 @@
   "scripts": {
     "link:lib": "yarn link && yarn link eslint-config-xeno",
     "unlink:lib": "yarn unlink eslint-config-xeno && yarn unlink && yarn install --force",
+    "preview:config": "yarn build && eslint --print-config src/index.ts > config-matchup/new-config.json",
     "build": "unbuild"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "@types/eslint": "^8.56.5",
     "@types/node": "^20.11.24",
     "eslint-plugin-storybook": "^0.8.0",
+    "globals": "^15.11.0",
     "prettier": "^3.0.0",
     "shx": "^0.3.4",
     "typescript": "^5",
