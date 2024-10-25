@@ -3,11 +3,7 @@
 ## Installation
 
 ```bash
-npm i -D eslint eslint eslint-config-xeno@latest
-```
-
-```bash
-yarn add -D eslint eslint eslint-config-xeno@latest
+yarn add -D eslint eslint@latest eslint-config-xeno@latest
 ```
 
 ## `eslint.config.js`
