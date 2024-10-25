@@ -2,7 +2,7 @@
   "name": "eslint-config-xeno",
   "version": "2.0.0",
   "description": "XenoPOMP`s ESLint config.",
-  "main": "index.js",
+  "main": "index.mjs",
   "type": "module",
   "scripts": {
     "link:lib": "yarn link && yarn link eslint-config-xeno",
