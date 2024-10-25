@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xeno",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "XenoPOMP`s ESLint config.",
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
