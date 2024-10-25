@@ -1,8 +1,8 @@
-import ririd, { type OptionsConfig } from '@ririd/eslint-config';
+import ririd from '@ririd/eslint-config';
 import globals from 'globals';
 
 export default function xenopomp(
-  options: OptionsConfig,
+  ...[options, ...userConfigs]: Parameters<typeof ririd>
 ): ReturnType<typeof ririd> {
   return ririd(
     {
@@ -53,6 +53,8 @@ export default function xenopomp(
       // Allow user to override ririd options
       ...options,
     },
+
+    // User configs
     {
       name: 'Old config',
       languageOptions: {
@@ -68,5 +70,10 @@ export default function xenopomp(
         },
       },
     },
+    {
+      name: 'Rules breakup',
+      rules: { '@next/next/no-duplicate-head': 'off' },
+    },
+    ...userConfigs,
   );
 }
