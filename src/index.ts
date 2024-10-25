@@ -71,8 +71,20 @@ export default function xenopomp(
       ],
     },
     {
-      name: 'Rules breakup',
+      name: 'Rules breakup #1',
       rules: { '@next/next/no-duplicate-head': 'off' },
+    },
+    {
+      name: 'Rules breakup #2',
+      rules: {
+        'style/operator-linebreak': 'off',
+        'test/consistent-test-it': 'off',
+        'test/prefer-lowercase-title': 'off',
+        'style/jsx-quotes': 'off',
+        'style/multiline-ternary': 'off',
+        'style/indent': 'off',
+      },
+      ignores: ['cypress'],
     },
     ...userConfigs,
   );
