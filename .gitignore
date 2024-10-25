@@ -134,6 +134,7 @@ dist
 # Template development specific files
 app/test
 **/{ignore}/*
+config-matchup
 
 # Vitest
 **/*.snap
